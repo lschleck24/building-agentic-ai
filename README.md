@@ -486,7 +486,6 @@ jupyter notebook benchmarking_reasoning_models.ipynb
 - Reasoning agents: [`reasoning_llms/reasoning_llm_agents.ipynb`](reasoning_llms/reasoning_llm_agents.ipynb) - Agent implementations
 - Introduction: [`reasoning_llms/intro_to_reasoning_models.ipynb`](reasoning_llms/intro_to_reasoning_models.ipynb) - Introduction to reasoning models
 - Tree of Thoughts: [`reasoning_llms/tot.ipynb`](reasoning_llms/tot.ipynb) - Tree of Thoughts implementation
-- Wordle solver: [`reasoning_llms/tot wordle.ipynb`](reasoning_llms/tot%20wordle.ipynb) - ToT applied to Wordle
 - Results: [`reasoning_llms/reasoning_results_math_qa.csv`](reasoning_llms/reasoning_results_math_qa.csv)
 
 **Key Features:**
