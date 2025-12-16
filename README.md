@@ -571,8 +571,6 @@ jupyter notebook clf.ipynb
 
 **Key Concepts:** Domain adaptation, fine-tuning, Qwen model, policy compliance, business rule learning
 
-**Code Location:** [`policy_bot/`](policy_bot/) and [`finetuning/domain_adaptation/`](finetuning/domain_adaptation/)
-
 **Colab Notebook:**
 - Fine-tuning Qwen for domain adaptation: [Google Colab](https://colab.research.google.com/drive/1eZzTJ5dNtbeh2RZS-kV7DD7jDHFqS4qG#scrollTo=yqxqAZ7KJ4oL)
 
