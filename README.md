@@ -2,15 +2,15 @@
   <img src="images/cover.png" alt="Applied AI Book Cover" width="400"/>
 </div>
 
-# Building Agentic AI Book - Code Repository
+# Applied AI Book - Code Repository
 
 **Buy the Book on Amazon:** [https://a.co/d/eaTeURV](https://a.co/d/eaTeURV)
 
-This repository contains code examples, experiments, and implementations for the **Building Agentic AI** book by Sinan Ozdemir. The book offers a practical, durable foundation for understanding how modern AI systems are built, why they behave the way they do, and how to push them to their limits.
+This repository contains code examples, experiments, and implementations for the **Applied AI** book by Sinan Ozdemir. The book offers a practical, durable foundation for understanding how modern AI systems are built, why they behave the way they do, and how to push them to their limits.
 
 ## About the Book
 
-**Building Agentic AI** is a practical guide for builders. If you're a developer deploying your first model, a data scientist making sense of embeddings and agents, or a founder exploring how AI workflows can reshape your product, this repository provides the code and examples to accompany your learning journey.
+**Applied AI** isn't a static textbook—it's a practical guide for builders. Whether you're a developer deploying your first model, a data scientist making sense of embeddings and agents, or a founder exploring how AI workflows can reshape your product, this repository provides the code and examples to accompany your learning journey.
 
 The book is organized in three acts:
 - **Act I: Foundations** — LLMs, embeddings, retrieval, and workflows for reliable, cost-effective, scalable systems
@@ -281,7 +281,7 @@ jupyter notebook react_agent_sql.ipynb
 
 **Code Location:** [`policy_bot/`](policy_bot/)
 
-A standalone rubric notebook for reference: [notebooks/structured_grader_evaluation.ipynb]
+A standalone rubric notebook for reference: [structured_grader_evaluation.ipynb](notebooks/structured_grader_evaluation.ipynb)
 
 **Setup:**
 ```bash
@@ -488,6 +488,7 @@ jupyter notebook benchmarking_reasoning_models.ipynb
 - Reasoning agents: [`reasoning_llms/reasoning_llm_agents.ipynb`](reasoning_llms/reasoning_llm_agents.ipynb) - Agent implementations
 - Introduction: [`reasoning_llms/intro_to_reasoning_models.ipynb`](reasoning_llms/intro_to_reasoning_models.ipynb) - Introduction to reasoning models
 - Tree of Thoughts: [`reasoning_llms/tot.ipynb`](reasoning_llms/tot.ipynb) - Tree of Thoughts implementation
+- Wordle solver: [`reasoning_llms/tot wordle.ipynb`](reasoning_llms/tot%20wordle.ipynb) - ToT applied to Wordle
 - Results: [`reasoning_llms/reasoning_results_math_qa.csv`](reasoning_llms/reasoning_results_math_qa.csv)
 
 **Key Features:**
@@ -573,6 +574,8 @@ jupyter notebook clf.ipynb
 
 **Key Concepts:** Domain adaptation, fine-tuning, Qwen model, policy compliance, business rule learning
 
+**Code Location:** [`policy_bot/`](policy_bot/) and [`finetuning/domain_adaptation/`](finetuning/domain_adaptation/)
+
 **Colab Notebook:**
 - Fine-tuning Qwen for domain adaptation: [Google Colab](https://colab.research.google.com/drive/1eZzTJ5dNtbeh2RZS-kV7DD7jDHFqS4qG#scrollTo=yqxqAZ7KJ4oL)
 
@@ -605,6 +608,16 @@ jupyter notebook rubric_grade_domain_adapt.ipynb
 
 **Colab Notebook:**
 - Qwen speculative decoding: [Google Colab](https://colab.research.google.com/drive/1P03P_hYP6H_zBmqlhvyOgTVvO737rBls)
+
+**Code Location:** *Implementation pending*
+
+**Status:** This case study is planned for the book but the code implementation is not yet available in this repository. Check back for updates or refer to the book chapter for theoretical details and implementation guidance.
+
+**Expected Features:**
+- Draft model implementation
+- Speculative decoding pipeline
+- Performance benchmarking
+- Speed vs accuracy trade-offs
 
 ---
 
@@ -661,6 +674,17 @@ python twilio_app.py
 
 **Colab Notebook:**
 - Matryoshka embeddings: [Google Colab](https://colab.research.google.com/drive/1N9ROhCmrOTnXMkpIc9SukVeSwFr5Xxkx#scrollTo=UbG2yyJxv_JW)
+
+**Code Location:** [`finetuning/embeddings/`](finetuning/embeddings/)
+
+**Status:** The directory exists but implementation is not yet available. This case study is planned for the book. Check back for updates or refer to the book chapter for implementation details.
+
+**Expected Features:**
+- Matryoshka embedding training
+- Multi-dimensional embedding support
+- Dynamic dimension selection
+- Performance benchmarking
+- Speed vs accuracy optimization
 
 ---
 
@@ -810,7 +834,7 @@ structured_llm = llm.with_structured_output(ScoreResponse)
 
 ## License
 
-This repository contains code examples and implementations for the Building Agentic AI book. Please refer to the book for detailed explanations and context.
+This repository contains code examples and implementations for the Applied AI book. Please refer to the book for detailed explanations and context.
 
 ---
 
