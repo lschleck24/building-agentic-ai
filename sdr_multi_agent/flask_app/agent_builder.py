@@ -12,7 +12,9 @@ from datetime import datetime
 from langchain_mcp_adapters.client import MultiServerMCPClient
 from langgraph.prebuilt import create_react_agent
 from langgraph.checkpoint.memory import MemorySaver
-from langchain_openai import ChatOpenAI
+#from langchain_openai import ChatOpenAI
+#change to Groq instead
+from langchain_groq import ChatGroq
 from langchain_core.messages import HumanMessage, AIMessage
 
 from prompts import get_sdr_system_prompt
@@ -157,10 +159,18 @@ class GenericAgent:
             max_tokens = agent_settings.get("max_tokens", 4000)
             
             # Initialize the language model with config settings
+            """
             llm = ChatOpenAI(
                 base_url="https://openrouter.ai/api/v1",
                 model=model_name,
                 api_key=os.getenv("OPENROUTER_API_KEY"),
+                temperature=temperature,
+                max_tokens=max_tokens
+            )
+            """
+            llm = ChatGroq(
+                model="llama-3.3-70b-versatile",
+                api_key=os.getenv("GROQ_API_KEY"),
                 temperature=temperature,
                 max_tokens=max_tokens
             )
@@ -171,7 +181,7 @@ class GenericAgent:
             prompt = self._get_system_prompt()
 
             # Create the agent with checkpointer for memory
-            self.agent = create_agent(
+            self.agent = create_react_agent(
                 llm, 
                 self.tools, 
                 system_prompt=prompt,
