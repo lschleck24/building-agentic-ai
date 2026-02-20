@@ -17,6 +17,8 @@ from langgraph.checkpoint.memory import MemorySaver
 from langchain_groq import ChatGroq
 from langchain_core.messages import HumanMessage, AIMessage
 
+from langchain_core.messages import SystemMessage
+
 from prompts import get_sdr_system_prompt
 
 
@@ -169,7 +171,7 @@ class GenericAgent:
             )
             """
             llm = ChatGroq(
-                model="llama-3.3-70b-versatile",
+                model="llama-3.1-8b-instant",
                 api_key=os.getenv("GROQ_API_KEY"),
                 temperature=temperature,
                 max_tokens=max_tokens
@@ -184,7 +186,7 @@ class GenericAgent:
             self.agent = create_react_agent(
                 llm, 
                 self.tools, 
-                system_prompt=prompt,
+                prompt=prompt,
                 checkpointer=self.checkpointer
             )
             self.initialized = True
