@@ -10,7 +10,7 @@ from typing import Dict, List, Any
 from datetime import datetime
 
 from langchain_mcp_adapters.client import MultiServerMCPClient
-from langchain.agents import create_react_agent
+from langgraph.prebuilt import create_react_agent
 from langgraph.checkpoint.memory import MemorySaver
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage, AIMessage
